@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Ritesh Kumar Singh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./port.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" ></script>
+</head>
+<body>
+    
+    <section id="home" class="container-fluid">
+         <div class="">
+            <div class="col"  id="navbar">
+                <div class="logo">
+                    <p><span>R</span>ITESH.</p>
+                 </div>
+                 <div class="nav">
+                    <ul id="nav-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark close-icon" onclick="closemenu()"></i>
+                    </ul>
+                 </div>
+                 <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
+            </div>
+         </div>
+
+         <div class="row"  id="inner-body">
+            <div class="col-6">
+                <div id="inner-content">
+                    <p>Software Engineer</p>
+                    <h1>Hi, I'm <span>Ritesh</span><br>Singh From India</h1>
+                </div>
+            </div>
+            <div class="col-6" id="img-div">     
+                 <img src="https://pngimg.com/uploads/student/student_PNG62529.png" alt="">
+            </div>
+         </div>
+    </section>
+
+    <section id="about">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                     <img src="https://images.unsplash.com/photo-1601392561050-340745ba9c25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80" alt="">
+                </div>
+                <div class="col-md-8 pl-md-4">
+                       <div class="about-content">
+                        <h1>About Me</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe magnam deserunt delectus esse sint, pariatur eum officiis aliquid sit aperiam illum tenetur. Eveniet et reprehenderit mollitia itaque neque impedit, amet libero, modi atque praesentium nostrum odit eius cum! Ipsam praesentium eaque debitis accusamus consequatur voluptatibus illum nisi voluptates dolorum eius.</p>
+                       </div>
+
+                       <div class="tab-heading">
+                          <div class="tab-link active" onclick="tabChange('skill')">Skill</div>
+                          <div class="tab-link" onclick="tabChange('experience')">Experience</div>
+                          <div class="tab-link" onclick="tabChange('education')">Education</div>
+                       </div>
+
+                       <div class="tab-content">
+                          <div class="skill-tab-content t-c active" id="skill">
+                             <p class="title">UI/UX</p>
+                             <p class="title-content">Designing Web/App interfaces</p>
+                             <p class="title">Web Development</p>
+                             <p class="title-content">Web App Development</p>
+                             <p class="title">App Development</p>
+                             <p class="title-content">Building Android/iOS Apps</p>
+                          </div>
+                          <div class="experience-tab-content t-c" id="experience">
+                            <p class="title">2021-curent</p>
+                            <p class="title-content">UI/UX Design Training at Sasaram</p>
+                            <p class="title">2019-21</p>
+                            <p class="title-content">Team Lead at Sasaram</p>
+                            <p class="title">2017-19</p>
+                            <p class="title-content">Executive at Sasaram</p>
+                          </div>
+                          <div class="education-tab-content t-c" id="education">
+                            <p class="title">2000-2010</p>
+                             <p class="title-content">St. Paul Senior Secondary School , Sasaram</p>
+                             <p class="title">2010-17</p>
+                             <p class="title-content">Central Hindu School , Varanasi</p>
+                             <p class="title">2018-2022</p>
+                             <p class="title-content">National Institute  of Techonology , delhi</p>
+                          </div>
+                       </div>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+           <h1>My Services</h1>
+         <div class="row">
+            <div class="col-md-4">
+                <div class="card-1 services-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum fuga voluptates sapiente quas ab?</p>
+                    <a href="">Learn More</a>
+                </div> 
+            </div>
+
+            <div class="col-md-4">
+               <div class="card-2 services-card">
+                  <i class="fa-solid fa-crop-simple"></i>
+                  <h3>UI/UX Design</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum fuga voluptates sapiente quas ab?</p>
+                  <a href="">Learn More</a>
+              </div> 
+            </div>
+
+            <div class="col-md-4">
+               <div class="card-3 services-card">
+                  <i class="fa-brands fa-app-store"></i>
+                  <h3>App Design</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum fuga voluptates sapiente quas ab?</p>
+                  <a href="">Learn More</a>
+              </div> 
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+       <div class="container">
+         <h1>My Work</h1>
+         <div class="row">
+            <div class="col-md-4">
+                <div class="portfolio-card card-1">
+                    <img src="https://images.unsplash.com/photo-1558885544-2defc62e2e2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="">
+
+                    <div class="layer">
+                       <div class="layer-content">
+                         <h3>Online Shopping App</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem, exercitationem suscipit sint non explicabo.</p>
+                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+               <div class="portfolio-card card-2">
+                    <img src="https://images.unsplash.com/photo-1598971861713-54ad16a7e72e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="">
+
+                    <div class="layer">
+                     <div class="layer-content">
+                       <h3>Online Shopping App</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem, exercitationem suscipit sint non explicabo.</p>
+                       <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="portfolio-card card-3">
+                    <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+
+                    <div class="layer">
+                     <div class="layer-content">
+                       <h3>Online Shopping App</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem, exercitationem suscipit sint non explicabo.</p>
+                       <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+              
+             <div class="portfolio-btn">
+               <button>See More</button>
+             </div>
+
+       </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+           <div class="row">
+             <div class="col-md-5">
+                <div class="left-contact">
+                  <h1>Contact Me</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i> r2611s@gmail.com</p>
+                  <p><i class="fa-solid fa-square-phone-flip"></i> 9140134345</p>
+                  <div class="social-icons">
+                     <i class="fa-brands fa-facebook"></i>
+                     <i class="fa-brands fa-instagram"></i>
+                     <i class="fa-brands fa-square-twitter"></i>
+                     <i class="fa-brands fa-linkedin"></i>
+                  </div>
+               <button>
+                  Download CV
+               </button> 
+                </div> 
+             </div>
+             <div class="col-md-7">
+                 <div class="right-contact">
+                  <form action="">
+                     <input  name="name" type="text" placeholder="Your Name">
+                     <input name="email" type="email" placeholder="Your Email">
+                     <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                     <button>Submit</button>
+                  </form>
+                 </div>
+             </div>
+           </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &#174; Ritesh , Made with <i class="fa-solid fa-heart"></i> by Ritesh Singh</p>
+        </div>
+    </section>
+   
+    <script src="./port.js"></script>
+</body>
+</html>
