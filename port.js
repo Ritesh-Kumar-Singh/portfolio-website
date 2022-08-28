@@ -30,3 +30,20 @@ var myul=document.getElementById("nav-ul");
    {
        myul.classList.remove('active'); 
    }
+
+
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbzRsA37TAWgrZNat-iNFDDzIHdj10MuEWEQX5iFBiP_mw0fzWGwgwI89-AxKN8ZDin--w/exec'
+   const form = document.forms['submit-to-google-sheet']
+ 
+   form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => {
+           var formmsg=document.getElementById("form-msg");
+           formmsg.innerHTML=" form submitted successfully!!!"
+           setInterval(function(){
+                formmsg.innerHTML="";
+           },5000)
+       })
+       .catch(error => console.error('Error!', error.message))
+   })
