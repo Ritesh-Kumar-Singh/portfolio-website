@@ -44,6 +44,7 @@ var myul=document.getElementById("nav-ul");
            setInterval(function(){
                 formmsg.innerHTML="";
            },5000)
+           form.reset();
        })
        .catch(error => console.error('Error!', error.message))
    })
